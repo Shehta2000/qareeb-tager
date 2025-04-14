@@ -1,5 +1,4 @@
 import 'dart:async';
-
 import 'package:connectivity/connectivity.dart';
 import 'package:sixam_mart_store/controller/auth_controller.dart';
 import 'package:sixam_mart_store/controller/splash_controller.dart';
