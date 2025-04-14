@@ -1,5 +1,4 @@
-# 6amMart Store App
-
+Qareeb Tager  App
 
 
 ## Getting started
