@@ -1,5 +1,5 @@
 import 'dart:async';
-import 'package:connectivity/connectivity.dart';
+import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:sixam_mart_store/controller/auth_controller.dart';
 import 'package:sixam_mart_store/controller/splash_controller.dart';
 import 'package:sixam_mart_store/data/model/body/notification_body.dart';
@@ -31,7 +31,7 @@ class SplashScreenState extends State<SplashScreen> {
       Get.find<AuthController>().getProfile();
     }
 
-    bool firstTime = true;
+   bool firstTime = true;
     _onConnectivityChanged = Connectivity().onConnectivityChanged.listen((ConnectivityResult result) {
       if(!firstTime) {
         bool isNotConnected = result != ConnectivityResult.wifi && result != ConnectivityResult.mobile;
@@ -50,7 +50,6 @@ class SplashScreenState extends State<SplashScreen> {
       }
       firstTime = false;
     });
-
     Get.find<SplashController>().initSharedData();
     _route();
 
